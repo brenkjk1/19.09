@@ -53,7 +53,6 @@ body {
 }
 
 #login-form input {
-
     display: block;
     font-size: 12px;
     padding: 12px 9px;
@@ -80,7 +79,7 @@ body {
 }
 
 .line {
-    border-top: 1px solid;
+    border-top: 1px solid #dbdbdb;
     width: 268px;
     margin: 25px auto 35px;
 }
@@ -121,7 +120,7 @@ body {
 
 #forgot-pass a {
     text-decoration: none;
-    color: #373799
+    color: #373799;
 }
 
 #register-container {
@@ -134,7 +133,7 @@ body {
 
 #register-container p {
     font-size: 14px;
-    color: #262626;
+    color: #262626
 }
 
 #register-container a {
@@ -162,7 +161,7 @@ body {
     height: 40px;
 }
 
-footer{
+footer {
     display: flex;
     align-items: center;
     width: 1000px;
@@ -171,25 +170,66 @@ footer{
     justify-content: center;
 }
 
-#footer-link{
+#footer-links {
     display: flex;
     margin-right: 10px;
 }
 
-nav #footer-links{
+nav #footer-links {
     list-style: none;
 }
 
-nav #footer-links li{
+nav #footer-links li {
     margin-right: 10px;
+
 }
 
-#footer-links a, #copyright{
+#footer-links a,
+#copyright {
     text-decoration: none;
     color: #8e8e8e;
     font-size: 12px;
 }
 
-#copyright{
+#copyright {
     margin-top: 10px;
+}
+
+/* DESAFIO  - Trabalhar a responsividade desse projeto*/
+
+/* celular */
+
+@media (max-width: 450px) {
+    body {
+        background-color: #fff;
+    }
+
+    #banner-container {
+        display: none;
+    }
+
+    #main-container,
+    #form-box {
+        margin-top: 0;
+    }
+
+    #main-container,
+    #form-box,
+    #register-container,
+    #get-app-container {
+        width: 100%;
+        border: none;
+    }
+
+    footer{
+        width: 90%;
+    }
+
+    #footer-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+
 }
